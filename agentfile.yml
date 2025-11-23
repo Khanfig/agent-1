@@ -1,9 +1,15 @@
-name: Test window file
-
-on: push
-
--name: list
-  run: ls -ltra
-
--name: present working directory
-  run: pwd  
+name: My First Workflow
+on: [push]
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo "Hello, World!"
+      - name: Run a multi-line script
+        run: |
+          echo "This is a multi-line script."
+          echo "It runs several commands."
+          echo "Goodbye!"   
