@@ -1,5 +1,3 @@
-newtest.yml
-
 name: My First Workflow
 on: push
 jobs:
