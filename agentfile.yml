@@ -1,0 +1,6 @@
+name: Test window file
+
+on: push
+
+-name: list
+  run: ls -ltra
